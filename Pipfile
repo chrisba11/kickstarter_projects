@@ -5,6 +5,8 @@ verify_ssl = true
 
 [dev-packages]
 pep8 = "*"
+pandas = "*"
+sqlalchemy = "*"
 
 [packages]
 django = "*"
