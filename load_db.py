@@ -36,4 +36,4 @@ engine = create_engine('{}://{}:{}@{}:5432/{}'.format(
     db_protocol, db_user, db_password, db_host, db_name
 ))
 
-df.to_sql("reviews_app_review", engine, if_exists='append', index=False)
+df.to_sql("project_data_app_project", engine, if_exists='append', index=False)
