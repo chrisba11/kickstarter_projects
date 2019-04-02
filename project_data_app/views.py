@@ -11,7 +11,7 @@ CACHE_TTL = getattr(settings, 'CACHE_TTL', DEFAULT_TIMEOUT)
 
 @cache_page(CACHE_TTL)
 def project_list_view(request):
-    project_list = get_list_or_404(Project, id__lte=100)
+    project_list = get_list_or_404(Project)
     paginator = Paginator(project_list, 20)
 
     page = request.GET.get('page')
