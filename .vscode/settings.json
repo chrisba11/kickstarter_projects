@@ -1,4 +1,6 @@
 {
-    "python.pythonPath": "/Users/danle/.local/share/virtualenvs/kickstarter_projects-rAWMXL_k/bin/python",
-    "python.linting.pylintEnabled": false
+    "python.pythonPath": "/Users/chris/.local/share/virtualenvs/kickstarter_projects-ikCv5d9b/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.pep8Enabled": true,
+    "python.linting.enabled": true
 }

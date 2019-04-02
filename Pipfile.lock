@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "61625f13ddcba2b9f12876569561492137bbff083a4c5e818f6df402e8fd2b99"
+            "sha256": "c5ebe12297b52297a73c40bc8661d7f89515d0b7049e14e61311909b2b46803b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -45,6 +45,14 @@
             ],
             "index": "pypi",
             "version": "==2.2"
+        },
+        "django-redis": {
+            "hashes": [
+                "sha256:af0b393864e91228dd30d8c85b5c44d670b5524cb161b7f9e41acc98b6e5ace7",
+                "sha256:f46115577063d00a890867c6964ba096057f07cb756e78e0503b89cd18e4e083"
+            ],
+            "index": "pypi",
+            "version": "==4.10.0"
         },
         "django-registration": {
             "hashes": [
@@ -129,13 +137,20 @@
         "rcssmin": {
             "hashes": [
                 "sha256:ca87b695d3d7864157773a61263e5abb96006e9ff0e021eff90cbe0e1ba18270",
-                "sha256:ef4f4087c23665523a715e4d8829207fb50cc77d1d35c76387bc3d8bcaab8aee"
+                "sha256:edfc896e4c26e09da14f361b9ae53609a61b072265ec0978f714bfbe002e8495"
             ],
             "version": "==1.0.6"
         },
+        "redis": {
+            "hashes": [
+                "sha256:6946b5dca72e86103edc8033019cc3814c031232d339d5f4533b02ea85685175",
+                "sha256:8ca418d2ddca1b1a850afa1680a7d2fd1f3322739271de4b704e0d4668449273"
+            ],
+            "version": "==3.2.1"
+        },
         "rjsmin": {
             "hashes": [
-                "sha256:05ce7c81098ec2add5055aec893cacf524b1a13f9c5e5e5564957e444fbf98d9",
+                "sha256:a00e8fb142dd852e0070992d254e93189a4d80e07f45ec8ba5c406e52e9702a4",
                 "sha256:dd9591aa73500b08b7db24367f8d32c6470021f39d5ab4e50c7c02e4401386f1"
             ],
             "version": "==1.0.12"
@@ -241,10 +256,10 @@
         },
         "sqlalchemy": {
             "hashes": [
-                "sha256:781fb7b9d194ed3fc596b8f0dd4623ff160e3e825dd8c15472376a438c19598b"
+                "sha256:d5432832f91d200c3d8b473a266d59442d825f9ea744c467e68c5d9a9479fbce"
             ],
             "index": "pypi",
-            "version": "==1.3.1"
+            "version": "==1.3.2"
         }
     }
 }
