@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django_registration',
     'project_data_project',
     'project_data_app',
+    'sass_processor',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +138,12 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# SASS Processor
+SASS_PROCESSOR_ROOT = STATIC_ROOT
+SASS_PROCESSOR_ENABLED = os.environ.get('DEBUG', False) == 'True'
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'sass_processor.finders.CssFinder',
+]
