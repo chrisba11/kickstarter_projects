@@ -1,0 +1,6 @@
+{% extends 'generic/base.html' %}
+{% block content %}
+{% for project in projects %}
+<h3>{{ project.name }}</h3>
+{% endfor %}
+{% endblock content %}

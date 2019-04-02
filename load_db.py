@@ -7,18 +7,23 @@ csv_data = pd.read_csv('./assets/ks-projects-201801.csv')
 df = pd.DataFrame(csv_data)
 
 # Adjust NaN values in each column, and generally clean data set
-df['id'] = df['Unnamed: 0'] + 1
-del df['Unnamed: 0']
-
-df['price'] = df['price'].fillna(0.0)
-df['designation'] = df['designation'].fillna('unknown')
-df['region_1'] = df['region_1'].fillna('unknown')
-df['region_2'] = df['region_2'].fillna('unknown')
-df['taster_twitter_handle'] = df['taster_twitter_handle'].fillna('unknown')
-df['taster_name'] = df['taster_name'].fillna('unknown')
+df['usd_pledged'] = df['usd pledged']
+del df['usd pledged']
+del df['ID']
+df['name'] = df['name'].fillna('unknown')
+df['pledged'] = df['pledged'].fillna(0.0)
+df['category'] = df['category'].fillna('unknown')
+df['main_category'] = df['main_category'].fillna('unknown')
+df['currency'] = df['currency'].fillna('unknown')
+df['deadline'] = df['deadline'].fillna('01/01/1600')
+df['goal'] = df['goal'].fillna(0)
+df['launched'] = df['launched'].fillna('01/01/1600 12:00:00 AM')
+df['state'] = df['state'].fillna('unknown')
+df['backers'] = df['backers'].fillna(0)
 df['country'] = df['country'].fillna('unknown')
-df['province'] = df['province'].fillna('unknown')
-df['variety'] = df['variety'].fillna('unknown')
+df['usd_pledged'] = df['usd_pledged'].fillna(0.0)
+df['usd_pledged_real'] = df['usd_pledged_real'].fillna(0.0)
+df['usd_goal_real'] = df['usd_goal_real'].fillna(0.0)
 
 db_protocol = 'postgresql'
 db_host = os.environ.get('DB_HOST', '')
@@ -31,4 +36,4 @@ engine = create_engine('{}://{}:{}@{}:5432/{}'.format(
     db_protocol, db_user, db_password, db_host, db_name
 ))
 
-df.to_sql("reviews_app_review", engine, if_exists='append', index=False)
+df.to_sql("project_data_app_project", engine, if_exists='append', index=False)

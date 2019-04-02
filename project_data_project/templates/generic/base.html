@@ -12,11 +12,14 @@
         <ul>
           <li><a href="{% url 'home' %}">Home</a></li>
           <li><a href="{% url 'admin:index' %}">Admin</a></li>
+          <li><a href="{% url "project_list" %}">Project List</a></li>
         </ul>
       </nav>
-    </header> 
+    </header>
     <main>
       <h1>THIS IS THE BASE</h1>
+      {% block content%}
+      {% endblock content %}
     </main>
     <footer>
 
