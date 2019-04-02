@@ -148,7 +148,7 @@ STATICFILES_FINDERS = [
     'sass_processor.finders.CssFinder',
 ]
 
-#Redis config
+# Redis config
 
 CACHES = {
     "default": {
@@ -162,4 +162,4 @@ CACHES = {
 }
 
 # Cache time to live
-CACHE_TTL = 60
+CACHE_TTL = 60 * 5
