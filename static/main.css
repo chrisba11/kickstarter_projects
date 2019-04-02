@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  background-color: #eee;
+  color: gray;
+  font-size: 16px; }
+
+* {
+  position: static;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: tahoma;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  white-space: normal;
+  background: none;
+  color: black;
+  list-style: none; }
+
+form *:focus {
+  border: none;
+  outline: none; }
+
+/*# sourceMappingURL=main.css.map */
