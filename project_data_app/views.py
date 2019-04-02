@@ -8,6 +8,6 @@ from .models import Project
 def project_list_view(request):
     projects = get_list_or_404(Project)
     context ={
-        'projects': projects,
+        'projects': projects[:10],
     }
-    return render(request, 'generic/project_list.html', context)
+    return render(request, 'projects/project_list.html', context)

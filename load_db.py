@@ -10,7 +10,7 @@ df = pd.DataFrame(csv_data)
 df['usd_pledged'] = df['usd pledged']
 del df['usd pledged']
 del df['ID']
-
+df['name'] = df['name'].fillna('unknown')
 df['pledged'] = df['pledged'].fillna(0.0)
 df['category'] = df['category'].fillna('unknown')
 df['main_category'] = df['main_category'].fillna('unknown')
